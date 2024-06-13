@@ -19,7 +19,7 @@
 }
 .logo{
     width: 110px;
-    margin-left: 50px;
+    margin-right: 700PX;
 }
 .box{
     width: 250px;
@@ -59,4 +59,16 @@ textarea{
 .raw{
     width: 600px;
     margin-left: 300px;
+}
+
+#menu{
+    display: none;
+}
+#menu:checked{
+    display: initial;
+}
+.Id1{
+    margin-top: 18px;
+    width: 50px;
+    height: 40px;
 }

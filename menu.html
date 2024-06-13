@@ -1,0 +1,65 @@
+<nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item nav-phone">
+            
+        </li>
+        <li class="nav-item nav-phone">
+            <a class="nav-link active" href="index.php" aria-current="page">
+                Inicio
+            </a>
+        </li>
+        <li class="nav-item nav-phone">
+            <div class="dropdown open">
+                <button class="btn dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Centro de cuentas
+                </button>
+                <!-- Centro de cuentas -->
+
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+
+
+
+                        <a class="dropdown-item disabled" href="#">Configuración</a>
+                        <h6 class="dropdown-divider"></h6>
+                        <a class="dropdown-item" href="functions/logout.php">Cerrar Sesión</a>
+
+                        <a class="dropdown-item" href="login.php">Iniciar Sesión</a>
+                        <a class="dropdown-item" href="registro.php">Registrarse</a>                 
+                </div>
+                <!-- ## -->
+            </div>
+        </li>
+        <li class="nav-item nav-phone">
+            <a class="nav-link disabled" href="#">Favoritos</a>
+        </li>
+        <li>
+            <button class="btn phone" type="button" data-bs-toggle="offcanvas" data-bs-target="#Id1" aria-controls="Id1">
+                    <i class="material-icons">menu</i>
+                </button>
+
+    </ul>
+</nav>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="Id1" aria-labelledby="Enable both scrolling & backdrop">
+<div class="background-container">
+<div class="offcanvas-header">
+        <h3>Randworld</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+</div>
+<div class="offcanvas-body">
+    <div class="info">
+        <img src="public/img/default.jpg" class="img-fluid rounded cover" alt="Cover"/>
+        <div>
+            
+     <!-- AQUI VA ELLOGO  -->
+            <h2>
+              <?php echo $_SESSION['username']; ?>
+            </h2>
+                <a name="" id="" class="btn btn-primary space disabled" href="#" role="button">Configuración</a>
+                <a name="" id="" class="btn btn-primary space" href="functions/logout.php" role="button">Cerrar Sesión</a>
+        </div>
+        
+    </div>
+    
+</div>
+</div>
